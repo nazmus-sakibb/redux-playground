@@ -1,3 +1,7 @@
+// Defining constants 
+const INCREMENT = 'INCREMENT' 
+const DECREMENT = 'DECREMENT' 
+
 // state
 const initialCounterState = {
     count : 0
@@ -13,7 +17,24 @@ const initialUserState = {
 
 // Action -- object - type, payload
 // INCREMENT COUNTER
-{
-    type: 'INCREMENT',
-}
+const incrementCounter = () => {
+    return {
+        type: INCREMENT,
+    }
+};
+
 // DECREMENT COUNTER
+const decrementCounter = () => {
+    return {
+        type: DECREMENT,
+    }
+};
+
+
+
+const decrementCounter = () => {
+    return {
+        type: DECREMENT,
+    }
+};
+
