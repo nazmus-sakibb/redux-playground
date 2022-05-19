@@ -1,6 +1,7 @@
 // Defining constants 
-const INCREMENT = 'INCREMENT' 
-const DECREMENT = 'DECREMENT' 
+const INCREMENT = 'INCREMENT'; 
+const DECREMENT = 'DECREMENT'; 
+const ADD_USER = 'ADD_USER';
 
 // state
 const initialCounterState = {
@@ -32,9 +33,15 @@ const decrementCounter = () => {
 
 
 
-const decrementCounter = () => {
+const addUser = () => {
     return {
-        type: DECREMENT,
+        type: ADD_USER,
+        payload: {name: 'JS Redux'},
     }
 };
 
+
+// 1. state
+// 2. dispatch action
+// 3. reducer
+// 4. store
